@@ -1,0 +1,22 @@
+{
+  "1": {
+    "img": "1-farois@2x.webp",
+    "name": "FAROIS FULL LED"
+  },
+  "2": {
+    "img": "2-central-multimidia@2x.webp",
+    "name": "CENTRAL MULTIMIDIA"
+  },
+  "3": {
+    "img": "3-air-bags@2x.webp",
+    "name": "7 AIRBAGS"
+  },
+  "4": {
+    "img": "4-suspensao-independente@2x.webp",
+    "name": "SUSPENSÃO INDEPENDENTE"
+  },
+  "5": {
+    "img": "5-seletor-terrenos@2x.webp",
+    "name": "SELETOR dE TERRENOS"
+  }
+}

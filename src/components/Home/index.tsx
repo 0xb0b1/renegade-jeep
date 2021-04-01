@@ -10,7 +10,7 @@ import {
 
 import PosterDesk from "../../assets/poster-desk.webp";
 
-import JeepLogo from "../../assets/jeep_logo.svg";
+import Logo from "../../assets/logo.svg";
 
 import { AiOutlinePlus } from "react-icons/ai";
 
@@ -51,13 +51,15 @@ function Home(): JSX.Element {
       <PosterHeader>
         <Header>
           <div className="logo">
-            <img src={JeepLogo} alt="Header Logo" />
+            <span>
+              <img src={Logo} alt="Header Logo" />
+            </span>
           </div>
-          <div>
+          <div className="header-title">
             <span>RENEGADE</span>
             <span>2021</span>
           </div>
-          <div>
+          <div className="header-slogan">
             <span>JEEP RENEGADE.</span>
             <span>A AVENTURA ESTÁ</span>
             <span>NO SANGUE.</span>

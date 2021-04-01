@@ -27,24 +27,42 @@ export const Header = styled.header`
   width: 100%;
   height: 20%;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 
-    margin: 1rem auto;
-
-    span {
-      font-size: 2rem;
-      color: #fff;
-
-      padding-top: 0.24rem;
-    }
-  }
+  margin: 1rem;
 
   .logo {
     width: 4rem;
     height: 4rem;
+  }
+
+  .header-title {
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-slogan {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  span {
+    font-size: 2rem;
+    color: #fff;
+
+    text-align: left;
+
+    padding-top: 0.24rem;
   }
 `;
 

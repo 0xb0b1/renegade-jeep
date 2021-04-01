@@ -6,7 +6,7 @@ import {
   NavBar,
   MainMenu,
   SubMenu,
-  Buttons,
+  FeatureButtons,
 } from "./styles";
 
 import JeepLogo from "../../assets/jeep_logo.svg";
@@ -14,11 +14,11 @@ import JeepLogo from "../../assets/jeep_logo.svg";
 import { FiChevronRight } from "react-icons/fi";
 
 function SideBar(): JSX.Element {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
-  function handleActiveItem() {
-    setIsActive(!isActive);
-  }
+  // function handleActiveItem() {
+  // setIsActive(!isActive);
+  // }
 
   // if we want to use Routes and whatever you want to,
   // we can create an object like: { "name": "MenuName", "link": "LinkTo", ... }
@@ -68,14 +68,14 @@ function SideBar(): JSX.Element {
           </SubMenu>
         </MainMenu>
       </NavBar>
-      <Buttons>
+      <FeatureButtons>
         {packageItems.map((item) => (
           <div>
             <span>{item}</span>
             <FiChevronRight className="btn-icon" />
           </div>
         ))}
-      </Buttons>
+      </FeatureButtons>
     </Container>
   );
 }

@@ -103,7 +103,7 @@ export const SubMenu = styled.ul`
   }
 `;
 
-export const Buttons = styled.div`
+export const FeatureButtons = styled.div`
   margin-left: 1rem;
 
   div {

@@ -9,7 +9,44 @@ export const Container = styled.div`
   }
 `;
 
-export const PosterHeader = styled.div``;
+export const PosterHeader = styled.div`
+  grid-column: 1/3;
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Header = styled.header`
+  width: 100%;
+  height: 20%;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin: 1rem auto;
+
+    span {
+      font-size: 2rem;
+      color: #fff;
+
+      padding-top: 0.24rem;
+    }
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+`;
 
 export const Background = styled.div`
   overflow-x: hidden;
@@ -31,10 +68,7 @@ export const Background = styled.div`
 `;
 
 export const GridItems = styled.div`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  /* grid-column: 2; */
 
   display: flex;
   align-items: center;
@@ -57,7 +91,7 @@ export const ImageBox = styled.div`
 
   font-size: 0.7rem;
 
-  border-radius: 0.25rem;
+  border-radius: 0.05rem;
 
   margin: 0.25rem;
 
@@ -81,6 +115,10 @@ export const Thumbnail = styled.div`
 
   /* border: 1px solid #f4bc41; */
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   height: 2rem;
 
   color: #fff;
@@ -92,18 +130,26 @@ export const Thumbnail = styled.div`
 
     height: auto;
     text-align: left;
+    padding: 0 0.45rem;
   }
 
   span {
     font-size: 1.25rem;
     border: 0;
     width: 25%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    flex-wrap: wrap;
+
     background-color: #f4bc41;
     color: #000;
+
+    .plus-icon:hover {
+      transform: scale(0.7);
+    }
   }
 `;

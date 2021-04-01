@@ -29,7 +29,7 @@ export const Header = styled.header`
   background-color: #fff;
 
   position: fixed;
-  width: 18vw;
+  width: 20vw;
 
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ export const SubMenu = styled.ul`
 
   li {
     margin: 0.45rem 1rem;
-    line-height: 2rem;
+    line-height: 1rem;
 
     transition: color 0.3s;
 

@@ -4,9 +4,13 @@ import {
   GridItems,
   ImageBox,
   Thumbnail,
+  PosterHeader,
+  Header,
 } from "./styles";
 
 import PosterDesk from "../../assets/poster-desk.webp";
+
+import JeepLogo from "../../assets/jeep_logo.svg";
 
 import { AiOutlinePlus } from "react-icons/ai";
 
@@ -43,6 +47,22 @@ function Home(): JSX.Element {
     <Container>
       <Background>
         <img src={PosterDesk} alt="poster desk" />
+      </Background>
+      <PosterHeader>
+        <Header>
+          <div className="logo">
+            <img src={JeepLogo} alt="Header Logo" />
+          </div>
+          <div>
+            <span>RENEGADE</span>
+            <span>2021</span>
+          </div>
+          <div>
+            <span>JEEP RENEGADE.</span>
+            <span>A AVENTURA ESTÁ</span>
+            <span>NO SANGUE.</span>
+          </div>
+        </Header>
 
         <GridItems>
           {images.map((image) => (
@@ -51,13 +71,13 @@ function Home(): JSX.Element {
               <Thumbnail>
                 <p>{image.name}</p>
                 <span>
-                  <AiOutlinePlus />
+                  <AiOutlinePlus className="plus-icon" />
                 </span>
               </Thumbnail>
             </ImageBox>
           ))}
         </GridItems>
-      </Background>
+      </PosterHeader>
     </Container>
   );
 }

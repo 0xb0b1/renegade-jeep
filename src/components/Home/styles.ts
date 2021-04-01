@@ -91,26 +91,22 @@ export const Background = styled.div`
 
 export const FeatureThumb = styled.section`
   width: 100%;
+  height: 100%;
   text-align: inherit;
 `;
 
 export const FeatureList = styled.div`
-  width: 65%;
-  margin: 0 auto;
+  /* width: 65%; */
 
-  @media (max-width: 1080px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
 `;
 
 export const GridItems = styled.div`
-  grid-column: 2;
-
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 
   position: absolute;
   bottom: 5%;

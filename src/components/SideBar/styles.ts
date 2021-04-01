@@ -110,7 +110,7 @@ export const Buttons = styled.div`
     width: 15vw;
     height: 2rem;
 
-    background-color: #ffaf00;
+    background-color: #fabc37;
 
     text-align: left;
 
@@ -122,7 +122,7 @@ export const Buttons = styled.div`
     justify-content: space-between;
 
     margin: 0.45rem;
-    padding: 1.12rem 1.25rem;
+    padding: 1.22rem 1.25rem;
 
     font-size: 0.65rem;
 

@@ -6,5 +6,5 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
 `;

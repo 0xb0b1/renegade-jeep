@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.aside`
   grid-column: 1/3;
-  position: absolute;
-  width: 18%;
+  width: 19.4%;
   height: 100%;
+
+  position: fixed;
 
   overflow-y: scroll;
 
@@ -99,7 +100,7 @@ export const SubMenu = styled.ul`
 export const Buttons = styled.div`
   margin-left: 1rem;
 
-  button {
+  div {
     width: 15vw;
     height: 2rem;
 
@@ -107,7 +108,7 @@ export const Buttons = styled.div`
 
     text-align: left;
 
-    border: 0;
+    /* border: 0; */
     border-radius: 0.3rem;
 
     display: flex;

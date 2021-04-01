@@ -8,6 +8,7 @@ import {
   SubMenu,
   Buttons,
 } from "./styles";
+
 import JeepLogo from "../../assets/jeep_logo.svg";
 
 import { FiChevronRight } from "react-icons/fi";
@@ -66,10 +67,10 @@ function SideBar(): JSX.Element {
       </NavBar>
       <Buttons>
         {packageItems.map((item) => (
-          <button>
+          <div>
             <span>{item}</span>
             <FiChevronRight className="btn-icon" />
-          </button>
+          </div>
         ))}
       </Buttons>
     </Container>

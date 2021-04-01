@@ -8,26 +8,37 @@ export const Container = styled.div`
 export const PosterHeader = styled.div``;
 
 export const Background = styled.div`
+  overflow-x: hidden;
+  overflow-y: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   img {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    object-fit: cover;
+
+    @media (max-width: 1080px) {
+      height: 80vh;
+    }
   }
 `;
 
 export const GridItems = styled.div`
   position: absolute;
-  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
+  padding: 2vw;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+
+  box-sizing: content-box;
 `;
 
 export const ImageBox = styled.div`
@@ -38,7 +49,7 @@ export const ImageBox = styled.div`
 
   border-radius: 0.25rem;
 
-  margin: 0.45rem;
+  margin: 0.25rem;
 
   display: flex;
   flex-direction: column;
@@ -56,8 +67,11 @@ export const ImageBox = styled.div`
 export const Thumbnail = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
 
-  border: 1px solid #f4bc41;
+  /* border: 1px solid #f4bc41; */
+
+  height: 2rem;
 
   color: #fff;
   background-color: #333;
@@ -70,11 +84,16 @@ export const Thumbnail = styled.div`
     text-align: left;
   }
 
-  button {
+  span {
     font-size: 1.25rem;
     border: 0;
     width: 25%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: #f4bc41;
+    color: #000;
   }
 `;

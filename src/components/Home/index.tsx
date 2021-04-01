@@ -50,9 +50,9 @@ function Home(): JSX.Element {
             <img src={`../../assets/${image.img}`} alt={image.name} />
             <Thumbnail>
               <p>{image.name}</p>
-              <button>
+              <span>
                 <AiOutlinePlus />
-              </button>
+              </span>
             </Thumbnail>
           </ImageBox>
         ))}

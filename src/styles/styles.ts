@@ -7,4 +7,8 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+  }
 `;

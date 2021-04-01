@@ -43,20 +43,21 @@ function Home(): JSX.Element {
     <Container>
       <Background>
         <img src={PosterDesk} alt="poster desk" />
+
+        <GridItems>
+          {images.map((image) => (
+            <ImageBox>
+              <img src={`../../assets/${image.img}`} alt={image.name} />
+              <Thumbnail>
+                <p>{image.name}</p>
+                <span>
+                  <AiOutlinePlus />
+                </span>
+              </Thumbnail>
+            </ImageBox>
+          ))}
+        </GridItems>
       </Background>
-      <GridItems>
-        {images.map((image) => (
-          <ImageBox>
-            <img src={`../../assets/${image.img}`} alt={image.name} />
-            <Thumbnail>
-              <p>{image.name}</p>
-              <span>
-                <AiOutlinePlus />
-              </span>
-            </Thumbnail>
-          </ImageBox>
-        ))}
-      </GridItems>
     </Container>
   );
 }

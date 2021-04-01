@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   grid-column: 2;
   background: #ccc;
+
+  @media (max-width: 1080px) {
+    grid-column: 1;
+  }
 `;
 
 export const PosterHeader = styled.div``;
@@ -20,9 +24,9 @@ export const Background = styled.div`
     height: 100vh;
     object-fit: cover;
 
-    @media (max-width: 1080px) {
+    /* @media (max-width: 1080px) {
       height: 80vh;
-    }
+    } */
   }
 `;
 
@@ -32,13 +36,19 @@ export const GridItems = styled.div`
   bottom: 0;
   left: 0;
 
-  padding: 2vw;
-
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+
+  margin-left: 12rem;
+  margin-bottom: 6rem;
 
   box-sizing: content-box;
+
+  @media (max-width: 1080px) {
+    justify-content: center;
+    margin: 4rem auto;
+  }
 `;
 
 export const ImageBox = styled.div`

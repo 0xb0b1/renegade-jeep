@@ -19,6 +19,10 @@ export const Container = styled.aside`
   &::-webkit-scrollbar-thumb {
     background-color: #f9d78e;
   }
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
 `;
 
 export const Header = styled.header`
@@ -48,7 +52,7 @@ export const NavBar = styled.nav`
 
     li {
       margin-bottom: 1rem;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.2rem;
 
       font-weight: 600;
 
@@ -79,14 +83,14 @@ export const SubMenu = styled.ul`
 
   li {
     margin: 0.45rem 1rem;
-    line-height: 1.4rem;
+    line-height: 2rem;
 
     transition: color 0.3s;
 
     &:not(:last-child):after {
       content: "";
       display: block;
-      width: 80px;
+      width: 64px;
       padding-top: 0.45rem;
       border-bottom: 2px solid #ccc;
     }

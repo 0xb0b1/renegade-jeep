@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  grid-column: 2;
   background: #ccc;
 `;
 
@@ -10,6 +11,11 @@ export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 export const GridItems = styled.div`
@@ -40,6 +46,11 @@ export const ImageBox = styled.div`
 
   border: 1px solid #f4cb41;
   background: #f1f5f0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Thumbnail = styled.div`

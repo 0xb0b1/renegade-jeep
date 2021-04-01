@@ -2,20 +2,22 @@ import { useState } from "react";
 
 import {
   Container,
-  Brand,
+  Header,
   NavBar,
   MainMenu,
   SubMenu,
   Buttons,
-  ButtonToggle,
 } from "./styles";
 import JeepLogo from "../../assets/jeep_logo.svg";
 
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { FiChevronRight } from "react-icons/fi";
 
 function SideBar(): JSX.Element {
-  const [isOpen, setIsOpen] = useState(true);
+  // const [isActive, setIsActive] = useState(false);
+
+  // function handleActiveItem() {
+  //   setIsActive(!isActive);
+  // }
 
   const menuItem: string[] = [
     "RENEGADE 2021",
@@ -35,14 +37,19 @@ function SideBar(): JSX.Element {
     "Pacotes de Serviçõs",
   ];
 
+  const packageItems: string[] = [
+    "MONTE O SEU",
+    "SIMULE O FINANCIAMENTO",
+    "COMPRE O SEU",
+    "CONCESSIONÁRIA",
+    "OFERTAS JEEP",
+  ];
+
   return (
     <Container>
-      <Brand>
+      <Header>
         <img src={JeepLogo} alt="Jeep Logo" />
-      </Brand>
-      <ButtonToggle onClick={() => setIsOpen(!isOpen)}>
-        <span>{isOpen ? <IoIosArrowBack /> : <GiHamburgerMenu />}</span>
-      </ButtonToggle>
+      </Header>
       <NavBar>
         <MainMenu>
           <ul className="menu-item">
@@ -58,26 +65,12 @@ function SideBar(): JSX.Element {
         </MainMenu>
       </NavBar>
       <Buttons>
-        <button>
-          <span>MONTE O SEU</span>
-          <IoIosArrowForward className="btn-icon" />
-        </button>
-        <button>
-          <span> SIMULE O FINACIAMENTO</span>
-          <IoIosArrowForward className="btn-icon" />
-        </button>
-        <button>
-          <span>COMPRE O SEU</span>
-          <IoIosArrowForward className="btn-icon" />
-        </button>
-        <button>
-          <span>CONCESSIONÁRIA</span>
-          <IoIosArrowForward className="btn-icon" />
-        </button>
-        <button>
-          <span>OFERTAS JEEP</span>
-          <IoIosArrowForward className="btn-icon" />
-        </button>
+        {packageItems.map((item) => (
+          <button>
+            <span>{item}</span>
+            <FiChevronRight className="btn-icon" />
+          </button>
+        ))}
       </Buttons>
     </Container>
   );

@@ -1,17 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-
-  clear: none;
-
+export const Container = styled.aside`
+  grid-column: 1/3;
+  position: absolute;
   width: 18%;
   height: 100%;
-
-  z-index: 99;
 
   overflow-y: scroll;
 
@@ -27,40 +20,26 @@ export const Container = styled.div`
   }
 `;
 
-export const Brand = styled.div`
+export const Header = styled.header`
   background-color: #fff;
 
   position: fixed;
   width: 18vw;
 
   display: flex;
-  align-items: flex-start;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
 
   img {
     width: 5.5rem;
+    height: 1.5rem;
     margin: 2rem 1.25rem;
   }
 `;
 
-export const ButtonToggle = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const NavBar = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-
+export const NavBar = styled.nav`
   margin-left: 1.25rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
 
   .menu-item {
     list-style: none;
@@ -72,12 +51,21 @@ export const NavBar = styled.div`
 
       font-weight: 600;
 
-      & + li {
-      }
-    }
+      transition: color 0.3s;
 
-    span {
-      margin-left: 1.25rem;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 80px;
+        padding-top: 0.45rem;
+        border-bottom: 2px solid #ccc;
+      }
+
+      &:hover {
+        color: var(--button-hover);
+      }
     }
   }
 `;
@@ -90,21 +78,34 @@ export const SubMenu = styled.ul`
 
   li {
     margin: 0.45rem 1rem;
-    line-height: 2em;
+    line-height: 1.4rem;
+
+    transition: color 0.3s;
+
+    &:not(:last-child):after {
+      content: "";
+      display: block;
+      width: 80px;
+      padding-top: 0.45rem;
+      border-bottom: 2px solid #ccc;
+    }
+
+    &:hover {
+      color: var(--button-hover);
+    }
   }
 `;
 
 export const Buttons = styled.div`
-  display: flex;
-  flex-direction: column;
-
   margin-left: 1rem;
 
   button {
-    width: 14vw;
+    width: 15vw;
     height: 2rem;
 
-    background-color: #f4bc41;
+    background-color: #ffaf00;
+
+    text-align: left;
 
     border: 0;
     border-radius: 0.3rem;
@@ -113,10 +114,14 @@ export const Buttons = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    margin: 0.45rem 0.5rem;
-    padding: 0.4rem 1rem;
+    margin: 0.45rem;
+    padding: 1.12rem 1.25rem;
 
     font-size: 0.65rem;
+
+    &:hover {
+      background-color: #fcc859;
+    }
 
     .btn-icon {
       font-size: 1rem;

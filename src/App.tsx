@@ -3,12 +3,17 @@ import Home from "./components/Home";
 
 import { GlobalStyle } from "./styles/global";
 
+import { Container } from "./styles/styles";
+
 function App(): JSX.Element {
   return (
     <>
       <GlobalStyle />
-      <Home />
-      <SideBar />
+
+      <Container>
+        <Home />
+        <SideBar />
+      </Container>
     </>
   );
 }

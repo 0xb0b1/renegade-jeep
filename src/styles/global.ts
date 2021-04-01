@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --background: #f2f5f0;
+    --button-hover: #f4bc41;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -42,13 +47,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   li {
-    transition: color 0.3s;
-
-    text-decoration: none;
     cursor: pointer;
-
-    &:hover {
-      color: var(--button-hover);
-    }
-  }
+  } 
 `;

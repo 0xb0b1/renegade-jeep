@@ -1,6 +1,5 @@
 import {
   Container,
-  PosterHeader,
   Background,
   GridItems,
   ImageBox,
@@ -45,7 +44,6 @@ function Home(): JSX.Element {
       <Background>
         <img src={PosterDesk} alt="poster desk" />
       </Background>
-      {/* <PosterHeader>Hello</PosterHeader> */}
       <GridItems>
         {images.map((image) => (
           <ImageBox>

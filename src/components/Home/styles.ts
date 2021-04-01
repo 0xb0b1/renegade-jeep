@@ -1,26 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 100%;
-
   background: #ccc;
 `;
 
-export const PosterHeader = styled.div`
-  position: absolute;
-`;
+export const PosterHeader = styled.div``;
 
 export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
 `;
 
 export const GridItems = styled.div`

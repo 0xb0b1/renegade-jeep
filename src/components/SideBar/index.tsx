@@ -1,6 +1,18 @@
 import { useState } from "react";
-import { Container, Brand, NavBar, MainMenu, SubMenu, Buttons } from "./styles";
+
+import {
+  Container,
+  Brand,
+  NavBar,
+  MainMenu,
+  SubMenu,
+  Buttons,
+  ButtonToggle,
+} from "./styles";
 import JeepLogo from "../../assets/jeep_logo.svg";
+
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function SideBar(): JSX.Element {
   const [isOpen, setIsOpen] = useState(true);
@@ -28,6 +40,9 @@ function SideBar(): JSX.Element {
       <Brand>
         <img src={JeepLogo} alt="Jeep Logo" />
       </Brand>
+      <ButtonToggle onClick={() => setIsOpen(!isOpen)}>
+        <span>{isOpen ? <IoIosArrowBack /> : <GiHamburgerMenu />}</span>
+      </ButtonToggle>
       <NavBar>
         <MainMenu>
           <ul className="menu-item">
@@ -45,18 +60,23 @@ function SideBar(): JSX.Element {
       <Buttons>
         <button>
           <span>MONTE O SEU</span>
+          <IoIosArrowForward className="btn-icon" />
         </button>
         <button>
           <span> SIMULE O FINACIAMENTO</span>
+          <IoIosArrowForward className="btn-icon" />
         </button>
         <button>
           <span>COMPRE O SEU</span>
+          <IoIosArrowForward className="btn-icon" />
         </button>
         <button>
           <span>CONCESSIONÁRIA</span>
+          <IoIosArrowForward className="btn-icon" />
         </button>
         <button>
           <span>OFERTAS JEEP</span>
+          <IoIosArrowForward className="btn-icon" />
         </button>
       </Buttons>
     </Container>

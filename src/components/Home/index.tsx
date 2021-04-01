@@ -5,6 +5,8 @@ import {
   ImageBox,
   Thumbnail,
   PosterHeader,
+  FeatureThumb,
+  FeatureList,
   Header,
 } from "./styles";
 
@@ -66,19 +68,23 @@ function Home(): JSX.Element {
           </div>
         </Header>
 
-        <GridItems>
-          {images.map((image) => (
-            <ImageBox>
-              <img src={`../../assets/${image.img}`} alt={image.name} />
-              <Thumbnail>
-                <p>{image.name}</p>
-                <span>
-                  <AiOutlinePlus className="plus-icon" />
-                </span>
-              </Thumbnail>
-            </ImageBox>
-          ))}
-        </GridItems>
+        <FeatureThumb>
+          <FeatureList>
+            <GridItems>
+              {images.map((image) => (
+                <ImageBox>
+                  <img src={`../../assets/${image.img}`} alt={image.name} />
+                  <Thumbnail>
+                    <p>{image.name}</p>
+                    <span>
+                      <AiOutlinePlus className="plus-icon" />
+                    </span>
+                  </Thumbnail>
+                </ImageBox>
+              ))}
+            </GridItems>
+          </FeatureList>
+        </FeatureThumb>
       </PosterHeader>
     </Container>
   );

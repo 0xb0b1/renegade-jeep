@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.aside`
   grid-column: 1/3;
-  width: 19.4%;
+  width: 18%;
+  min-width: 19.4%;
+
   height: 100%;
 
   position: fixed;
@@ -29,7 +31,7 @@ export const Header = styled.header`
   background-color: #fff;
 
   position: fixed;
-  width: 20vw;
+  width: 19%;
 
   display: flex;
   align-items: center;

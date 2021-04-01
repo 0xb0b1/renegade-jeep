@@ -4,6 +4,8 @@ export const Container = styled.div`
   grid-column: 2;
   background: #ccc;
 
+  position: relative;
+
   @media (max-width: 1080px) {
     grid-column: 1;
   }
@@ -11,12 +13,6 @@ export const Container = styled.div`
 
 export const PosterHeader = styled.div`
   grid-column: 1/3;
-
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 0;
 
   display: flex;
   flex-direction: column;
@@ -32,24 +28,32 @@ export const Header = styled.header`
   align-items: center;
   text-align: left;
 
-  margin: 1rem;
-
   .logo {
     width: 4rem;
     height: 4rem;
+    position: absolute;
+    top: 0;
+
+    margin: 0 auto;
   }
 
   .header-title {
     font-weight: bold;
     text-align: left;
-    display: flex;
-    flex-direction: column;
+    font-size: 10px;
+
+    position: absolute;
+    top: 0;
   }
 
   .header-slogan {
     text-align: left;
     display: flex;
     flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    margin-top: 10rem auto;
 
     span {
       font-size: 1rem;
@@ -85,21 +89,42 @@ export const Background = styled.div`
   }
 `;
 
+export const FeatureThumb = styled.section`
+  width: 100%;
+  text-align: inherit;
+`;
+
+export const FeatureList = styled.div`
+  width: 65%;
+  margin: 0 auto;
+
+  @media (max-width: 1080px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
 export const GridItems = styled.div`
-  /* grid-column: 2; */
+  grid-column: 2;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 
-  margin-left: 12rem;
-  margin-bottom: 6rem;
+  position: absolute;
+  bottom: 5%;
 
-  box-sizing: content-box;
+  height: 40vh;
+  max-height: 200px;
+
+  text-align: center;
+
+  margin: 0 auto;
 
   @media (max-width: 1080px) {
     justify-content: center;
-    margin: 4rem auto;
+    margin: auto;
   }
 `;
 
@@ -129,7 +154,6 @@ export const ImageBox = styled.div`
 export const Thumbnail = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
 
   /* border: 1px solid #f4bc41; */
 

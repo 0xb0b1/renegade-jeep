@@ -54,7 +54,7 @@ export const Header = styled.header`
     flex-direction: column;
 
     span {
-      font-size: 4.5vw;
+      font-size: 4.5rem;
       letter-spacing: 1rem;
     }
 
@@ -76,7 +76,7 @@ export const Header = styled.header`
     margin-top: 10rem auto;
 
     span {
-      font-size: 1.4vw;
+      font-size: 1.2rem;
       font-weight: bold;
       font-style: normal;
     }

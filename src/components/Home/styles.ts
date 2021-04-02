@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  grid-column: 2;
+  grid-column: 2/3;
   background: #ccc;
 
-  position: relative;
+  /* position: relative; */
 
   @media (max-width: 1080px) {
     grid-column: 1;
@@ -32,18 +32,35 @@ export const Header = styled.header`
     width: 4rem;
     height: 4rem;
     position: absolute;
-    top: 0;
+    top: 4%;
 
     margin: 0 auto;
+
+    @media (max-width: 1080px) {
+      top: 0;
+    }
   }
 
   .header-title {
     font-weight: bold;
     text-align: left;
-    font-size: 10px;
 
     position: absolute;
-    top: 0;
+    top: 15%;
+    right: 2%;
+
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
+
+    @media (max-width: 1080px) {
+      right: 20%;
+      top: 5%;
+    }
   }
 
   .header-slogan {
@@ -52,11 +69,20 @@ export const Header = styled.header`
     flex-direction: column;
 
     position: absolute;
-    top: 0;
+    bottom: 0;
+    top: 35%;
+    right: 5%;
     margin-top: 10rem auto;
 
     span {
       font-size: 1rem;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @media (max-width: 1080px) {
+      top: 40%;
+      right: 30%;
     }
   }
 

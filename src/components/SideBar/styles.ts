@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.aside`
   grid-column: 1/3;
-  width: 18%;
-  min-width: 19.4%;
+
+  box-sizing: content-box;
 
   height: 100%;
 
-  position: fixed;
+  position: absolute;
 
   overflow-y: scroll;
 
@@ -31,7 +31,7 @@ export const Header = styled.header`
   background-color: #fff;
 
   position: fixed;
-  width: 19%;
+  width: 18%;
 
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ export const NavBar = styled.nav`
       &:after {
         content: "";
         display: block;
-        width: 80px;
+        width: 100px;
         padding-top: 0.45rem;
         border-bottom: 2px solid #ccc;
       }
@@ -85,14 +85,14 @@ export const SubMenu = styled.ul`
 
   li {
     margin: 0.45rem 1rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
 
     transition: color 0.3s;
 
     &:not(:last-child):after {
       content: "";
       display: block;
-      width: 64px;
+      width: 84px;
       padding-top: 0.45rem;
       border-bottom: 2px solid #ccc;
     }
@@ -110,7 +110,7 @@ export const FeatureButtons = styled.div`
     width: 15vw;
     height: 2rem;
 
-    background-color: #fabc37;
+    background-color: #f4bc41;
 
     text-align: left;
 
@@ -125,6 +125,10 @@ export const FeatureButtons = styled.div`
     padding: 1.22rem 1.25rem;
 
     font-size: 0.65rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
 
     &:hover {
       background-color: #fcc859;

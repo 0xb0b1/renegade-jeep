@@ -54,7 +54,7 @@ export const Header = styled.header`
     flex-direction: column;
 
     span {
-      font-size: 5rem;
+      font-size: 4.5vw;
       letter-spacing: 1rem;
     }
 
@@ -76,7 +76,7 @@ export const Header = styled.header`
     margin-top: 10rem auto;
 
     span {
-      font-size: 1.2rem;
+      font-size: 1.4vw;
       font-weight: bold;
       font-style: normal;
     }
@@ -113,10 +113,16 @@ export const Background = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
+  }
 
-    /* @media (max-width: 1080px) {
-      height: 80vh;
-    } */
+  @media (max-width: 679px) {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+
+    img {
+      object-fit: cover;
+    }
   }
 `;
 
@@ -157,6 +163,7 @@ export const GridItems = styled.div`
   @media (max-width: 679px) {
     overflow: visible;
     position: fixed;
+    top: 50%;
   }
 `;
 

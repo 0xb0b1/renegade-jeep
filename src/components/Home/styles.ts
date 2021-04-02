@@ -38,7 +38,7 @@ export const Header = styled.header`
     margin: 0 auto;
 
     @media (max-width: 1080px) {
-      top: 5%;
+      top: 2%;
     }
   }
 
@@ -48,7 +48,7 @@ export const Header = styled.header`
 
     position: absolute;
     top: 15%;
-    right: 2%;
+    right: 4%;
 
     display: flex;
     flex-direction: column;
@@ -71,12 +71,12 @@ export const Header = styled.header`
 
     position: absolute;
     bottom: 0;
-    top: 35%;
-    right: 5%;
+    top: 40%;
+    right: 8%;
     margin-top: 10rem auto;
 
     span {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: bold;
       font-style: normal;
     }

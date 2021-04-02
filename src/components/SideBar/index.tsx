@@ -11,7 +11,15 @@ import JeepLogo from "../../assets/jeep_logo.svg";
 
 import { FiChevronRight } from "react-icons/fi";
 
+// import { HiMenuAlt1, HiX } from "react-icons/hi";
+
 function SideBar(): JSX.Element {
+  // const [click, setClick] = useState(false);
+
+  // const handleClick = () => setClick(!click);
+
+  // const closeMenu = () => setClick(false);
+
   // if we want to use Routes and whatever you want to,
   // we can create an object like: { "name": "MenuName", "link": "LinkTo", ... }
 

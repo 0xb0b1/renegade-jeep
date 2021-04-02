@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   /* position: relative; */
 
-  @media (max-width: 1080px) {
+  @media (max-width: 820px) {
     grid-column: 1;
   }
 `;
@@ -37,7 +37,7 @@ export const Header = styled.header`
 
     margin: 0 auto;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 820px) {
       top: 2%;
     }
   }
@@ -58,9 +58,9 @@ export const Header = styled.header`
       letter-spacing: 1rem;
     }
 
-    @media (max-width: 1080px) {
-      right: 20%;
-      top: 10%;
+    @media (max-width: 820px) {
+      left: 5%;
+      top: 8%;
     }
   }
 
@@ -72,7 +72,7 @@ export const Header = styled.header`
     position: absolute;
     bottom: 0;
     top: 40%;
-    right: 8%;
+    right: 10%;
     margin-top: 10rem auto;
 
     span {
@@ -81,9 +81,13 @@ export const Header = styled.header`
       font-style: normal;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 820px) {
       top: 40%;
-      right: 30%;
+      right: 25%;
+    }
+
+    @media (max-width: 679px) {
+      top: 25%;
     }
   }
 
@@ -136,7 +140,7 @@ export const GridItems = styled.div`
   display: flex;
 
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
 
   height: 40vh;
   max-height: 200px;
@@ -145,9 +149,14 @@ export const GridItems = styled.div`
 
   margin: 0 auto;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 820px) {
     justify-content: center;
     margin: auto;
+  }
+
+  @media (max-width: 679px) {
+    overflow: visible;
+    position: fixed;
   }
 `;
 

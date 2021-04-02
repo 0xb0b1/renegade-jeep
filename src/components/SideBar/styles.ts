@@ -5,8 +5,6 @@ export const Container = styled.aside`
 
   max-width: 18%;
 
-  box-sizing: content-box;
-
   height: 100%;
 
   position: fixed;
@@ -24,7 +22,7 @@ export const Container = styled.aside`
     background-color: #f9d78e;
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 820px) {
     transform: translateX(-100%);
   }
 `;

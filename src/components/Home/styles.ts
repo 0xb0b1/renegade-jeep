@@ -56,6 +56,10 @@ export const Header = styled.header`
     span {
       font-size: 4.5rem;
       letter-spacing: 1rem;
+
+      @media (max-width: 679px) {
+        font-size: 3rem;
+      }
     }
 
     @media (max-width: 820px) {
@@ -88,6 +92,7 @@ export const Header = styled.header`
 
     @media (max-width: 679px) {
       top: 25%;
+      font-size: 0.8rem;
     }
   }
 

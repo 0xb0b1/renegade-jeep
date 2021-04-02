@@ -31,13 +31,14 @@ export const Header = styled.header`
   .logo {
     width: 4rem;
     height: 4rem;
-    position: absolute;
+
+    position: fixed;
     top: 4%;
 
     margin: 0 auto;
 
     @media (max-width: 1080px) {
-      top: 0;
+      top: 5%;
     }
   }
 
@@ -59,7 +60,7 @@ export const Header = styled.header`
 
     @media (max-width: 1080px) {
       right: 20%;
-      top: 5%;
+      top: 10%;
     }
   }
 

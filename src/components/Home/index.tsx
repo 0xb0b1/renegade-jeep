@@ -22,7 +22,7 @@ interface ImageProps {
 }
 
 function Home(): JSX.Element {
-  const images: ImageProps[] = [
+  const images: Array<ImageProps> = [
     {
       img: "1-farois@2x.webp",
       name: "FAROIS FULL LED",

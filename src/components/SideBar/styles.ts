@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const Container = styled.aside`
   grid-column: 1/3;
 
+  max-width: 18%;
+
   box-sizing: content-box;
 
   height: 100%;
 
-  position: absolute;
+  position: fixed;
 
   overflow-y: scroll;
 
@@ -23,7 +25,7 @@ export const Container = styled.aside`
   }
 
   @media (max-width: 1080px) {
-    display: none;
+    transform: translateX(-100%);
   }
 `;
 

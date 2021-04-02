@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { slide as Menu } from "react-burger-menu";
+
 import {
   Container,
   Header,
@@ -14,16 +16,10 @@ import JeepLogo from "../../assets/jeep_logo.svg";
 import { FiChevronRight } from "react-icons/fi";
 
 function SideBar(): JSX.Element {
-  // const [isActive, setIsActive] = useState(false);
-
-  // function handleActiveItem() {
-  // setIsActive(!isActive);
-  // }
-
   // if we want to use Routes and whatever you want to,
   // we can create an object like: { "name": "MenuName", "link": "LinkTo", ... }
 
-  const menuItem: string[] = [
+  const menuItem: Array<string> = [
     "RENEGADE 2021",
     "TODAS AS VERSÕES",
     "VERSÕES ESPECIAIS",
@@ -31,7 +27,7 @@ function SideBar(): JSX.Element {
     "TUDO DO RENEGADE:",
   ];
 
-  const subMenuItems: string[] = [
+  const subMenuItems: Array<string> = [
     "Tecnologia",
     "Design",
     "Segurança",
@@ -41,7 +37,7 @@ function SideBar(): JSX.Element {
     "Pacotes de Serviçõs",
   ];
 
-  const packageItems: string[] = [
+  const packageItems: Array<string> = [
     "MONTE O SEU",
     "SIMULE O FINANCIAMENTO",
     "COMPRE O SEU",

@@ -9,6 +9,10 @@ export const Container = styled.div`
   @media (max-width: 820px) {
     grid-column: 1;
   }
+
+  @media (max-width: 1023px) {
+    background-image: url("../../assets/poster-mobile.webp");
+  }
 `;
 
 export const PosterHeader = styled.div`

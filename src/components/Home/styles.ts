@@ -175,8 +175,9 @@ export const Thumbnail = styled.div`
   background-color: #333;
 
   p {
-    font-size: 0.6rem;
-    font-weight: 600;
+    font-size: 0.61rem;
+    letter-spacing: 0.03rem;
+    font-family: "ProximaNova SBold", sans-serif;
 
     height: auto;
     text-align: left;

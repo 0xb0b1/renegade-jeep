@@ -1,11 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
 import ProximaNovaReg from "../fonts/ProximaNova-Reg.ttf";
+import ProximaNovaBold from "../fonts/ProximaNova-Bold.ttf";
+import ProximaNovaSBold from "../fonts/ProximaNova-Sbold.ttf";
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'ProximaNova';
-    src: local("ProximaNovaReg"), url(${ProximaNovaReg}) format('truetype');
+    font-family: "ProximaNova";
+    src: local("ProximaNovaReg"), url(${ProximaNovaReg}) format("truetype");
+  }
+
+  @font-face {
+    font-family: "ProximaNova Bold";
+    src: local("ProximaNovaBold"), url(${ProximaNovaBold});
+  }
+
+  @font-face {
+    font-family: "ProximaNova SBold";
+    src: local("ProximaNovaSBold"), url(${ProximaNovaSBold});
   }
 
   :root {

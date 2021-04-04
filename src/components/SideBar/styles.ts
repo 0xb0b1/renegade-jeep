@@ -56,7 +56,9 @@ export const NavBar = styled.nav`
       margin-bottom: 1rem;
       letter-spacing: 0.2rem;
 
-      font-weight: 600;
+      font-family: "ProximaNova Bold", sans-serif;
+
+      font-weight: bold;
 
       transition: color 0.3s;
 
@@ -85,7 +87,7 @@ export const SubMenu = styled.ul`
 
   li {
     margin: 0.45rem 1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 
     transition: color 0.3s;
 

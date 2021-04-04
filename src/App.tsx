@@ -1,6 +1,5 @@
 import SideBar from "./components/SideBar";
 import Home from "./components/Home";
-import MyHeader from "./components/Header";
 
 import { GlobalStyle } from "./styles/global";
 
@@ -12,7 +11,6 @@ function App(): JSX.Element {
       <GlobalStyle />
 
       <Container>
-        {/* <MyHeader /> */}
         <Home />
         <SideBar />
       </Container>

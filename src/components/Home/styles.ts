@@ -47,15 +47,12 @@ export const Poster = styled.header`
   }
 
   .header-title {
-    width: 30vw;
-
     position: absolute;
     top: 15%;
-    right: 4%;
+    right: 5%;
 
-    @media (max-width: 820px) {
-      left: 5%;
-      top: 8%;
+    img {
+      width: 25rem;
     }
   }
 
@@ -65,13 +62,8 @@ export const Poster = styled.header`
     top: 40%;
     right: 10%;
 
-    @media (max-width: 820px) {
-      top: 40%;
-      right: 25%;
-    }
-
-    @media (max-width: 679px) {
-      top: 25%;
+    img {
+      width: 8rem;
     }
   }
 

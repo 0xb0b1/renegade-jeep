@@ -12,6 +12,34 @@ export const Container = styled.div`
  */
 `;
 
+export const Background = styled.div`
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  @media (max-width: 679px) {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      align-self: left;
+    }
+  }
+`;
+
 export const PosterHeader = styled.div`
   grid-column: 1/3;
 
@@ -36,16 +64,23 @@ export const Poster = styled.header`
     position: fixed;
     top: 4%;
 
+    z-index: 999;
+
     margin: 0 auto;
   }
 
   .header-title {
     position: absolute;
     top: 14%;
-    right: 3.8%;
+    right: 10.5%;
 
     img {
-      width: 25rem;
+      width: 20rem;
+    }
+
+    @media (max-width: 603px) {
+      top: 8%;
+      left: 2%;
     }
   }
 
@@ -58,6 +93,10 @@ export const Poster = styled.header`
     img {
       width: 8rem;
     }
+
+    @media (max-width: 603px) {
+      top: 10%;
+    }
   }
 
   span {
@@ -67,31 +106,6 @@ export const Poster = styled.header`
     text-align: left;
 
     padding-top: 0.24rem;
-  }
-`;
-
-export const Background = styled.div`
-  overflow-x: hidden;
-  overflow-y: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  @media (max-width: 679px) {
-    object-fit: cover;
-    height: 100vh;
-    width: 100vw;
-
-    img {
-      object-fit: cover;
-    }
   }
 `;
 

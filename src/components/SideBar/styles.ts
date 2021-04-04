@@ -85,7 +85,7 @@ export const SubMenu = styled.ul`
 
   li {
     margin: 0.45rem 1rem;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 
     transition: color 0.3s;
 

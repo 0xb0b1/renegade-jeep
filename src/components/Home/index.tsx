@@ -16,6 +16,13 @@ import Logo from "../../assets/logo.svg";
 
 import { AiOutlinePlus } from "react-icons/ai";
 
+// images
+import farois from "../../assets/1-farois@2x.webp";
+import centralMultimedia from "../../assets/2-central-multimidia@2x.webp";
+import airBags from "../../assets/3-air-bags@2x.webp";
+import suspensao from "../../assets/4-suspensao-independente@2x.webp";
+import seletorTerreno from "../../assets/5-seletor-terrenos@2x.webp";
+
 interface ImageProps {
   name: string;
   img: string;
@@ -24,23 +31,23 @@ interface ImageProps {
 function Home(): JSX.Element {
   const images: Array<ImageProps> = [
     {
-      img: "1-farois@2x.webp",
+      img: farois,
       name: "FAROIS FULL LED",
     },
     {
-      img: "2-central-multimidia@2x.webp",
+      img: centralMultimedia,
       name: "CENTRAL MULTIMIDIA",
     },
     {
-      img: "3-air-bags@2x.webp",
+      img: airBags,
       name: "7 AIRBAGS",
     },
     {
-      img: "4-suspensao-independente@2x.webp",
+      img: suspensao,
       name: "SUSPENSÃO INDEPENDENTE",
     },
     {
-      img: "5-seletor-terrenos@2x.webp",
+      img: seletorTerreno,
       name: "SELETOR DE TERRENOS",
     },
   ];
@@ -73,7 +80,7 @@ function Home(): JSX.Element {
             <GridItems>
               {images.map((image) => (
                 <ImageBox>
-                  <img src={`../../assets/${image.img}`} alt={image.name} />
+                  <img src={image.img} alt={image.name} />
                   <Thumbnail>
                     <p>{image.name}</p>
                     <span>

@@ -49,7 +49,7 @@ export const Poster = styled.header`
   .header-title {
     position: absolute;
     top: 14%;
-    right: 4%;
+    right: 3.8%;
 
     img {
       width: 25rem;

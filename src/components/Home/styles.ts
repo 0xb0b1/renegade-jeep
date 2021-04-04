@@ -23,7 +23,7 @@ export const PosterHeader = styled.div`
   justify-content: space-between;
 `;
 
-export const Header = styled.header`
+export const Poster = styled.header`
   width: 100%;
   height: 20%;
 
@@ -47,24 +47,11 @@ export const Header = styled.header`
   }
 
   .header-title {
-    font-weight: bold;
-    text-align: left;
+    width: 30vw;
 
     position: absolute;
     top: 15%;
     right: 4%;
-
-    display: flex;
-    flex-direction: column;
-
-    span {
-      font-size: 4.5rem;
-      letter-spacing: 1rem;
-
-      @media (max-width: 679px) {
-        font-size: 3rem;
-      }
-    }
 
     @media (max-width: 820px) {
       left: 5%;
@@ -73,21 +60,10 @@ export const Header = styled.header`
   }
 
   .header-slogan {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-
     position: absolute;
     bottom: 0;
     top: 40%;
     right: 10%;
-    margin-top: 10rem auto;
-
-    span {
-      font-size: 1.2rem;
-      font-weight: bold;
-      font-style: normal;
-    }
 
     @media (max-width: 820px) {
       top: 40%;
@@ -96,7 +72,6 @@ export const Header = styled.header`
 
     @media (max-width: 679px) {
       top: 25%;
-      font-size: 0.8rem;
     }
   }
 

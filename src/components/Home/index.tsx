@@ -7,10 +7,12 @@ import {
   PosterHeader,
   FeatureThumb,
   FeatureList,
-  Header,
+  Poster,
 } from "./styles";
 
 import PosterDesk from "../../assets/poster-desk.webp";
+import PosterTitle from "../../assets/title.svg";
+import Slogan from "../../assets/slogan.svg";
 
 import Logo from "../../assets/logo.svg";
 
@@ -58,22 +60,17 @@ function Home(): JSX.Element {
         <img src={PosterDesk} alt="poster desk" />
       </Background>
       <PosterHeader>
-        <Header>
+        <Poster>
           <div className="logo">
-            <span>
-              <img src={Logo} alt="Header Logo" />
-            </span>
+            <img src={Logo} alt="Header Logo" />
           </div>
           <div className="header-title">
-            <span>RENEGADE</span>
-            <span>2021</span>
+            <img src={PosterTitle} alt="Poster Title" />
           </div>
           <div className="header-slogan">
-            <span>JEEP RENEGADE.</span>
-            <span>A AVENTURA ESTÁ</span>
-            <span>NO SANGUE.</span>
+            <img src={Slogan} alt="Slogan" />
           </div>
-        </Header>
+        </Poster>
 
         <FeatureThumb>
           <FeatureList>

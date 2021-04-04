@@ -48,8 +48,8 @@ export const Poster = styled.header`
 
   .header-title {
     position: absolute;
-    top: 15%;
-    right: 5%;
+    top: 14%;
+    right: 4%;
 
     img {
       width: 25rem;
@@ -59,8 +59,8 @@ export const Poster = styled.header`
   .header-slogan {
     position: absolute;
     bottom: 0;
-    top: 40%;
-    right: 10%;
+    top: 37%;
+    right: 8%;
 
     img {
       width: 8rem;

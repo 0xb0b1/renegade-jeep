@@ -4,15 +4,12 @@ export const Container = styled.div`
   grid-column: 2/3;
   background: #ccc;
 
-  /* position: relative; */
+  position: relative;
 
-  @media (max-width: 820px) {
+  /* @media (max-width: 820px) {
     grid-column: 1;
   }
-
-  @media (max-width: 1023px) {
-    background-image: url("../../assets/poster-mobile.webp");
-  }
+ */
 `;
 
 export const PosterHeader = styled.div`
@@ -40,10 +37,6 @@ export const Poster = styled.header`
     top: 4%;
 
     margin: 0 auto;
-
-    @media (max-width: 820px) {
-      top: 2%;
-    }
   }
 
   .header-title {

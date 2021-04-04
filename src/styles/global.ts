@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
+import ProximaNovaReg from "../fonts/ProximaNova-Reg.ttf";
+
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'ProximaNova';
+    src: local("ProximaNovaReg"), url(${ProximaNovaReg}) format('truetype');
+  }
+
   :root {
     --background: #f2f5f0;
     --button-hover: #f4bc41;
@@ -27,6 +34,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     -webkit-font-smoothing: antialised;
     text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: ProximaNova, sans-serif;
   }
 
   body,

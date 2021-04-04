@@ -13,8 +13,8 @@ export const Container = styled.div`
 `;
 
 export const Background = styled.div`
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   display: flex;
   justify-content: center;
@@ -32,10 +32,7 @@ export const Background = styled.div`
     width: 100vw;
 
     img {
-      width: 100vw;
-      height: 100vh;
       object-fit: cover;
-      align-self: left;
     }
   }
 `;

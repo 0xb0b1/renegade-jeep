@@ -47,7 +47,9 @@ export const Header = styled.header`
 export const NavBar = styled.nav`
   margin-left: 1.25rem;
   margin-top: 6rem;
+`;
 
+export const MainMenu = styled.div`
   .menu-item {
     list-style: none;
     font-size: 0.8rem;
@@ -58,11 +60,9 @@ export const NavBar = styled.nav`
 
       font-family: "ProximaNova Bold", sans-serif;
 
-      font-weight: bold;
-
       transition: color 0.3s;
 
-      text-decoration: none;
+      /* text-decoration: none; */
 
       &:after {
         content: "";
@@ -78,8 +78,6 @@ export const NavBar = styled.nav`
     }
   }
 `;
-
-export const MainMenu = styled.div``;
 
 export const SubMenu = styled.ul`
   font-size: 0.75rem;

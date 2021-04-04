@@ -54,7 +54,7 @@ export const NavBar = styled.nav`
 
     li {
       margin-bottom: 1rem;
-      letter-spacing: 0.2rem;
+      letter-spacing: 0.07rem;
 
       font-family: "ProximaNova Bold", sans-serif;
 

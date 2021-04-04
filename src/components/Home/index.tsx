@@ -1,3 +1,4 @@
+// styling components
 import {
   Container,
   Background,
@@ -10,15 +11,16 @@ import {
   Poster,
 } from "./styles";
 
+// logos
 import PosterDesk from "../../assets/poster-desk.webp";
 import PosterTitle from "../../assets/title.svg";
 import Slogan from "../../assets/slogan.svg";
-
 import Logo from "../../assets/logo.svg";
 
+// icons
 import { AiOutlinePlus } from "react-icons/ai";
 
-// images
+// thumbnail images
 import farois from "../../assets/1-farois@2x.webp";
 import centralMultimedia from "../../assets/2-central-multimidia@2x.webp";
 import airBags from "../../assets/3-air-bags@2x.webp";

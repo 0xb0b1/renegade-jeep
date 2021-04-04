@@ -1,3 +1,4 @@
+// styling components
 import {
   Container,
   Header,

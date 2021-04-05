@@ -18,7 +18,7 @@ export const Background = styled.div`
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 
   img {
     width: 100%;
@@ -27,12 +27,14 @@ export const Background = styled.div`
   }
 
   @media (max-width: 679px) {
-    object-fit: cover;
     height: 100vh;
     width: 100vw;
 
     img {
-      object-fit: cover;
+      object-fit: none;
+      overflow: visible;
+      width: 100vw;
+      height: auto;
     }
   }
 `;
@@ -76,8 +78,12 @@ export const Poster = styled.header`
     }
 
     @media (max-width: 603px) {
-      top: 8%;
+      top: 10%;
       left: 2%;
+
+      img {
+        width: 50vw;
+      }
     }
   }
 
@@ -92,7 +98,11 @@ export const Poster = styled.header`
     }
 
     @media (max-width: 603px) {
-      top: 10%;
+      top: 15%;
+
+      img {
+        width: 30vw;
+      }
     }
   }
 
@@ -144,6 +154,10 @@ export const GridItems = styled.div`
     overflow: visible;
     position: fixed;
     top: 50%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
   }
 `;
 

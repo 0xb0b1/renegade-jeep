@@ -1,4 +1,4 @@
-import useViewport from "../../hooks/useViewport";
+import { useViewport } from "../../hooks/useViewport";
 
 // styling components
 import {

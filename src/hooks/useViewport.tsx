@@ -21,6 +21,7 @@ const ViewPortContext: Context<ViewPortContextData> = createContext(
 
 export function ViewportProvider({ children }: ViewPortProviderProps) {
   const [width, setWidth] = useState(window.innerWidth);
+  // const [height, setHeight] = useState(window.innerHeight);
 
   const handleWindowResize = () => setWidth(window.innerWidth);
 

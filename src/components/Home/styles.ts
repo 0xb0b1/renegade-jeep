@@ -23,17 +23,15 @@ export const Background = styled.div`
   img {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 
   @media (max-width: 679px) {
-    /* height: 100%; */
-    /* width: 100%; */
-
     img {
-      /* overflow: visible; */
-      /* max-width: unset; */
-      /* object-fit: cover; */
+      overflow-y: hidden;
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100vh;
     }
   }
 `;
@@ -281,6 +279,8 @@ export const ButtonsContainer = styled.div``;
 // `;
 
 export const FeatureButtons = styled.div`
+  display: none;
+
   @media (max-width: 820px) {
     background-color: #202020;
     position: fixed;

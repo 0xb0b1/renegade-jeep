@@ -38,6 +38,9 @@ This project was made using the follow technologies:
 * TypeScript
 * styled-components
 
+# : TODO
+* Create a draggable scrolling component when in mobile screens for the thumb grids.
+
 # :construction_worker: How to run
 **Just clone the repo and then:**
 

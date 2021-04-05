@@ -23,7 +23,7 @@ export const Background = styled.div`
   img {
     width: 100%;
     height: 100vh;
-    /* object-fit: cover; */
+    object-fit: cover;
   }
 
   @media (max-width: 679px) {

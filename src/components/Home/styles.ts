@@ -210,6 +210,11 @@ export const Thumbnail = styled.div`
     background-color: #f4bc41;
     color: #000;
 
+    .plus-icon {
+      width: 2rem;
+      margin: 0 auto;
+    }
+
     .plus-icon:hover {
       transform: scale(0.7);
     }

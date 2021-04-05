@@ -31,10 +31,8 @@ export const Background = styled.div`
     width: 100vw;
 
     img {
-      object-fit: none;
-      overflow: visible;
-      width: 100vw;
-      height: auto;
+      max-width: unset;
+      object-fit: cover;
     }
   }
 `;

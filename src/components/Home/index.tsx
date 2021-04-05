@@ -9,13 +9,13 @@ import {
   FeatureThumb,
   FeatureList,
   Poster,
-  ButtonsContainer,
+  // ButtonsContainer,
   FeatureButtons,
 } from "./styles";
 
 // icons
-import { FiChevronRight } from "react-icons/fi";
 import { AiOutlinePlus } from "react-icons/ai";
+import { HiMenuAlt1 } from "react-icons/hi";
 
 // logos
 import PosterDesk from "../../assets/poster-desk.webp";
@@ -29,6 +29,7 @@ import centralMultimedia from "../../assets/2-central-multimidia@2x.webp";
 import airBags from "../../assets/3-air-bags@2x.webp";
 import suspensaoIndependente from "../../assets/4-suspensao-independente@2x.webp";
 import seletorTerreno from "../../assets/5-seletor-terrenos@2x.webp";
+import { useState } from "react";
 
 interface ImageProps {
   name: string;
@@ -36,6 +37,8 @@ interface ImageProps {
 }
 
 function Home(): JSX.Element {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   const images: Array<ImageProps> = [
     {
       img: farois,
@@ -67,6 +70,9 @@ function Home(): JSX.Element {
       <PosterHeader>
         <Poster>
           <div className="logo">
+            <span className="hamburger">
+              <HiMenuAlt1 />
+            </span>
             <img src={Logo} alt="Header Logo" />
           </div>
           <div className="header-title">
@@ -97,16 +103,16 @@ function Home(): JSX.Element {
         </FeatureThumb>
       </PosterHeader>
 
-      <ButtonsContainer>
-        <FeatureButtons>
-          <div>
-            <span>MONTE O SEU</span>
-          </div>
-          <div>
-            <span>COMPRE O SEU</span>
-          </div>
-        </FeatureButtons>
-      </ButtonsContainer>
+      {/* <ButtonsContainer> */}
+      <FeatureButtons>
+        <div>
+          <span>MONTE O SEU</span>
+        </div>
+        <div>
+          <span>COMPRE O SEU</span>
+        </div>
+      </FeatureButtons>
+      {/* </ButtonsContainer> */}
     </Container>
   );
 }

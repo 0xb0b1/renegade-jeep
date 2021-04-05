@@ -79,6 +79,13 @@ export const Poster = styled.header`
         width: 4rem;
       }
     }
+
+    .hamburger {
+      position: fixed;
+      left: 0;
+      padding-top: 0.45rem;
+      padding-left: 0.45rem;
+    }
   }
 
   .header-title {
@@ -251,18 +258,18 @@ export const Thumbnail = styled.div`
   }
 `;
 
-export const ButtonsContainer = styled.div`
-  display: none;
+export const ButtonsContainer = styled.div``;
+//   display: none;
 
-  @media (max-width: 603px) {
-    background-color: #202020;
-    height: 2rem;
-    display: flex;
-  }
-`;
+//   @media (max-width: 603px) {
+//     background-color: #202020;
+//     height: 2rem;
+//     display: flex;
+//   }
+// `;
 
 export const FeatureButtons = styled.div`
-  @media (max-width: 603px) {
+  @media (max-width: 820px) {
     background-color: #202020;
     position: fixed;
     bottom: 0;

@@ -64,6 +64,21 @@ export const Poster = styled.header`
     z-index: 999;
 
     margin: 0 auto;
+
+    @media (max-width: 820px) {
+      background-color: #202020;
+      width: 100%;
+      height: 2.5rem;
+      top: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 4rem;
+      }
+    }
   }
 
   .header-title {
@@ -196,7 +211,7 @@ export const Thumbnail = styled.div`
   height: 2rem;
 
   color: #fff;
-  background-color: #333;
+  background-color: #202020;
 
   p {
     font-size: 0.61rem;
@@ -240,7 +255,7 @@ export const ButtonsContainer = styled.div`
   display: none;
 
   @media (max-width: 603px) {
-    background-color: #333;
+    background-color: #202020;
     height: 2rem;
     display: flex;
   }
@@ -248,7 +263,7 @@ export const ButtonsContainer = styled.div`
 
 export const FeatureButtons = styled.div`
   @media (max-width: 603px) {
-    background-color: #333;
+    background-color: #202020;
     position: fixed;
     bottom: 0;
 
@@ -267,7 +282,6 @@ export const FeatureButtons = styled.div`
 
       text-align: center;
 
-      /* border: 0; */
       border-radius: 0.3rem;
 
       display: flex;

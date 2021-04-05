@@ -88,8 +88,8 @@ export const Poster = styled.header`
   .header-slogan {
     position: absolute;
     bottom: 0;
-    top: 37%;
-    right: 8%;
+    top: 35%;
+    right: 12%;
 
     img {
       width: 8rem;
@@ -153,9 +153,8 @@ export const GridItems = styled.div`
     position: fixed;
     top: 50%;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 `;
 
@@ -166,6 +165,8 @@ export const ImageBox = styled.div`
   font-size: 0.7rem;
 
   border-radius: 0.05rem;
+
+  position: relative;
 
   margin: 0.25rem;
 

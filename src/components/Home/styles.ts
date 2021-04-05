@@ -27,13 +27,13 @@ export const Background = styled.div`
   }
 
   @media (max-width: 679px) {
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
 
     img {
-      overflow: visible;
-      max-width: unset;
-      object-fit: cover;
+      /* overflow: visible; */
+      /* max-width: unset; */
+      /* object-fit: cover; */
     }
   }
 `;
@@ -54,6 +54,12 @@ export const Poster = styled.header`
   flex-direction: column;
   align-items: center;
   text-align: left;
+
+  .logo,
+  .header-title,
+  .header-slogan {
+    color: #fff;
+  }
 
   .logo {
     width: 4rem;
@@ -100,8 +106,6 @@ export const Poster = styled.header`
     top: 14%;
     right: 10.5%;
 
-    color: #fff;
-
     img {
       width: 20rem;
     }
@@ -121,8 +125,6 @@ export const Poster = styled.header`
     bottom: 0;
     top: 35%;
     right: 12%;
-
-    color: #fff;
 
     img {
       width: 8rem;

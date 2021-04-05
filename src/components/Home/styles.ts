@@ -100,6 +100,8 @@ export const Poster = styled.header`
     top: 14%;
     right: 10.5%;
 
+    color: #fff;
+
     img {
       width: 20rem;
     }
@@ -119,6 +121,8 @@ export const Poster = styled.header`
     bottom: 0;
     top: 35%;
     right: 12%;
+
+    color: #fff;
 
     img {
       width: 8rem;

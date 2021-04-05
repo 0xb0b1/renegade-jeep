@@ -96,8 +96,7 @@ export const Poster = styled.header`
 
       left: 0;
 
-      padding-top: 0.45rem;
-      padding-left: 0.45rem;
+      padding: 0.45rem 0 0 0.45rem;
     }
   }
 

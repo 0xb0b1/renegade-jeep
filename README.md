@@ -23,7 +23,7 @@
 
 <br />
 <div align="center">
-  <img src="https://github.com/0xb0b1/renegade-jeep/blob/master/screenshot.jpg" width="720">
+  <img src="https://github.com/0xb0b1/renegade-jeep/blob/master/screenshot.jpg" width="420">
 </div>
 
 # :eyes: Demo Website

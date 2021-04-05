@@ -235,3 +235,58 @@ export const Thumbnail = styled.div`
     }
   }
 `;
+
+export const ButtonsContainer = styled.div`
+  display: none;
+
+  @media (max-width: 603px) {
+    background-color: #333;
+    height: 2rem;
+    display: flex;
+  }
+`;
+
+export const FeatureButtons = styled.div`
+  @media (max-width: 603px) {
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+
+    /* margin-left: 1rem; */
+    padding-bottom: 0.8rem;
+
+    display: flex;
+
+    div {
+      width: 100%;
+      height: 2rem;
+
+      background-color: #f4bc41;
+
+      text-align: center;
+
+      /* border: 0; */
+      border-radius: 0.3rem;
+
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+
+      margin: 0.45rem;
+      padding: 1.22rem 1.25rem;
+
+      font-size: 0.65rem;
+
+      cursor: pointer;
+
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #fcc859;
+      }
+    }
+  }
+`;

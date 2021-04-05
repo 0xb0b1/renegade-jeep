@@ -9,16 +9,19 @@ import {
   FeatureThumb,
   FeatureList,
   Poster,
+  ButtonsContainer,
+  FeatureButtons,
 } from "./styles";
+
+// icons
+import { FiChevronRight } from "react-icons/fi";
+import { AiOutlinePlus } from "react-icons/ai";
 
 // logos
 import PosterDesk from "../../assets/poster-desk.webp";
 import PosterTitle from "../../assets/title.svg";
 import Slogan from "../../assets/slogan.svg";
 import Logo from "../../assets/logo.svg";
-
-// icons
-import { AiOutlinePlus } from "react-icons/ai";
 
 // thumbnail images
 import farois from "../../assets/1-farois@2x.webp";
@@ -76,6 +79,7 @@ function Home(): JSX.Element {
 
         <FeatureThumb>
           <FeatureList>
+            {/* make this component draggable when in mobile screen */}
             <GridItems>
               {images.map((image) => (
                 <ImageBox>
@@ -92,6 +96,17 @@ function Home(): JSX.Element {
           </FeatureList>
         </FeatureThumb>
       </PosterHeader>
+
+      <ButtonsContainer>
+        <FeatureButtons>
+          <div>
+            <span>MONTE O SEU</span>
+          </div>
+          <div>
+            <span>COMPRE O SEU</span>
+          </div>
+        </FeatureButtons>
+      </ButtonsContainer>
     </Container>
   );
 }

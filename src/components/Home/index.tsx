@@ -74,9 +74,9 @@ function Home(): JSX.Element {
       <PosterHeader>
         <Poster>
           <div className="logo">
-            <button className="hamburger">
+            <span className="hamburger">
               <HiMenuAlt1 />
-            </button>
+            </span>
             <img src={Logo} alt="Header Logo" />
           </div>
           <div className="header-title">

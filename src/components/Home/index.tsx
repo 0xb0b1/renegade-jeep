@@ -1,3 +1,5 @@
+import useViewport from "../../hooks/useViewport";
+
 // styling components
 import {
   Container,
@@ -30,8 +32,6 @@ import centralMultimedia from "../../assets/2-central-multimidia@2x.webp";
 import airBags from "../../assets/3-air-bags@2x.webp";
 import suspensaoIndependente from "../../assets/4-suspensao-independente@2x.webp";
 import seletorTerreno from "../../assets/5-seletor-terrenos@2x.webp";
-import { useState } from "react";
-import { useEffect } from "react";
 
 interface ImageProps {
   name: string;
@@ -41,16 +41,7 @@ interface ImageProps {
 function Home(): JSX.Element {
   // const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Hook used to show desktop or mobile background image
-  const [width, setWidth] = useState(window.innerHeight);
-
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => window.removeEventListener("resize", handleWindowResize);
-  });
-  console.log(width);
+  const { width } = useViewport();
 
   const images: Array<ImageProps> = [
     {

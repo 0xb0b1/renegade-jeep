@@ -213,10 +213,12 @@ export const Thumbnail = styled.div`
     .plus-icon {
       width: 2rem;
       margin: 0 auto;
-    }
 
-    .plus-icon:hover {
-      transform: scale(0.7);
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(0.7);
+      }
     }
   }
 `;

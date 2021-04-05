@@ -278,7 +278,8 @@ export const FeatureButtons = styled.div`
       margin: 0.45rem;
       padding: 1.22rem 1.25rem;
 
-      font-size: 0.65rem;
+      font-size: 0.85rem;
+      font-weight: 600;
 
       cursor: pointer;
 

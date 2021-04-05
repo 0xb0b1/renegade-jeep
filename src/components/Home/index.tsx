@@ -19,6 +19,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 
 // logos
 import PosterDesk from "../../assets/poster-desk.webp";
+import MobilePoster from "../../assets/poster-mobile.webp";
 import PosterTitle from "../../assets/title.svg";
 import Slogan from "../../assets/slogan.svg";
 import Logo from "../../assets/logo.svg";
@@ -30,6 +31,7 @@ import airBags from "../../assets/3-air-bags@2x.webp";
 import suspensaoIndependente from "../../assets/4-suspensao-independente@2x.webp";
 import seletorTerreno from "../../assets/5-seletor-terrenos@2x.webp";
 import { useState } from "react";
+import { useEffect } from "react";
 
 interface ImageProps {
   name: string;
@@ -37,7 +39,18 @@ interface ImageProps {
 }
 
 function Home(): JSX.Element {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  // const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Hook used to show desktop or mobile background image
+  const [width, setWidth] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  });
+  console.log(width);
 
   const images: Array<ImageProps> = [
     {
@@ -65,7 +78,7 @@ function Home(): JSX.Element {
   return (
     <Container>
       <Background>
-        <img src={PosterDesk} alt="poster desk" />
+        <img src={width > 603 ? PosterDesk : MobilePoster} alt="poster desk" />
       </Background>
       <PosterHeader>
         <Poster>

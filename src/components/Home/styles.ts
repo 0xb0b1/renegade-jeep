@@ -27,10 +27,11 @@ export const Background = styled.div`
   }
 
   @media (max-width: 679px) {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
     img {
+      overflow: visible;
       max-width: unset;
       object-fit: cover;
     }

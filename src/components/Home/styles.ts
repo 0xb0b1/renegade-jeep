@@ -83,7 +83,13 @@ export const Poster = styled.header`
 
     .hamburger {
       position: fixed;
+      border: 0;
+      background: none;
+      color: #fff;
+      font-size: 2rem;
+
       left: 0;
+
       padding-top: 0.45rem;
       padding-left: 0.45rem;
     }

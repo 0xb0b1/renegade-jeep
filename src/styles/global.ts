@@ -7,11 +7,13 @@ import ProximaNovaSBold from "../fonts/ProximaNova-Sbold.ttf";
 export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "ProximaNova";
+    font-style: normal;
     src: local("ProximaNovaReg"), url(${ProximaNovaReg}) format("truetype");
   }
 
   @font-face {
     font-family: "ProximaNova Bold";
+    font-style: bold;
     src: local("ProximaNovaBold"), url(${ProximaNovaBold});
   }
 

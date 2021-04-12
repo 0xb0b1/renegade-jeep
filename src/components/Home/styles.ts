@@ -28,8 +28,8 @@ export const Background = styled.div`
 
   @media (max-width: 679px) {
     img {
-      overflow-y: hidden;
       object-fit: cover;
+      overflow: hidden;
       max-width: 100%;
       max-height: 100vh;
     }
@@ -150,6 +150,9 @@ export const FeatureThumb = styled.section`
   width: 100%;
   height: 100%;
   text-align: inherit;
+
+  overflow-x: scroll;
+  cursor: grab;
 `;
 
 export const FeatureList = styled.div`
@@ -159,13 +162,15 @@ export const FeatureList = styled.div`
   align-items: center;
   justify-content: center;
 
+  /* float: left; */
+
   margin: 0 auto;
 `;
 
 export const GridItems = styled.div`
   display: flex;
 
-  position: absolute;
+  position: fixed;
   bottom: 2%;
 
   height: 40vh;

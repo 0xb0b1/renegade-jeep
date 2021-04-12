@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.aside`
   grid-column: 1/3;
 
-  max-width: 18%;
+  width: 18%;
 
   height: 100%;
 
@@ -24,6 +24,9 @@ export const Container = styled.aside`
 
   @media (max-width: 820px) {
     transform: translateX(-100%);
+    width: 100%;
+
+    margin-top: 2rem;
   }
 `;
 
@@ -107,7 +110,7 @@ export const FeatureButtons = styled.div`
   margin-left: 1rem;
 
   div {
-    width: 15vw;
+    /* width: 10rem; */
     height: 2rem;
 
     background-color: #f4bc41;

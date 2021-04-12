@@ -6,16 +6,19 @@ import { GlobalStyle } from "./styles/global";
 import { Container } from "./styles/styles";
 
 import { ViewportProvider } from "./hooks/useViewport";
+import { OpenMenuProvider } from "./hooks/useOpenMenu";
 
 function App(): JSX.Element {
   return (
     <ViewportProvider>
-      <GlobalStyle />
+      <OpenMenuProvider>
+        <GlobalStyle />
 
-      <Container>
-        <Home />
-        <SideBar />
-      </Container>
+        <Container>
+          <Home />
+          <SideBar />
+        </Container>
+      </OpenMenuProvider>
     </ViewportProvider>
   );
 }

@@ -11,15 +11,14 @@ import {
 import JeepLogo from "../../assets/jeep_logo.svg";
 
 import { FiChevronRight } from "react-icons/fi";
+import { useOpenMenu } from "../../hooks/useOpenMenu";
+import { useViewport } from "../../hooks/useViewport";
 
 // import { HiMenuAlt1, HiX } from "react-icons/hi";
 
 function SideBar(): JSX.Element {
-  // const [click, setClick] = useState(false);
-
-  // const handleClick = () => setClick(!click);
-
-  // const closeMenu = () => setClick(false);
+  const { isOpenMenu } = useOpenMenu();
+  const { width } = useViewport();
 
   // if we want to use Routes and whatever you want to,
   // we can create an object like: { "name": "MenuName", "link": "LinkTo", ... }
@@ -51,7 +50,16 @@ function SideBar(): JSX.Element {
   ];
 
   return (
-    <Container>
+    <Container
+      style={{
+        transform:
+          width < 820
+            ? isOpenMenu
+              ? "translateX(0)"
+              : "translateX(-100%)"
+            : "",
+      }}
+    >
       <Header>
         <img src={JeepLogo} alt="Jeep Logo" />
       </Header>

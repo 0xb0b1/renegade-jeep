@@ -17,7 +17,7 @@ import {
 
 // icons
 import { AiOutlinePlus } from "react-icons/ai";
-import { HiMenuAlt1 } from "react-icons/hi";
+import { HiMenuAlt1, HiX } from "react-icons/hi";
 
 // logos
 import PosterDesk from "../../assets/poster-desk.webp";
@@ -32,6 +32,7 @@ import centralMultimedia from "../../assets/2-central-multimidia@2x.webp";
 import airBags from "../../assets/3-air-bags@2x.webp";
 import suspensaoIndependente from "../../assets/4-suspensao-independente@2x.webp";
 import seletorTerreno from "../../assets/5-seletor-terrenos@2x.webp";
+import { useOpenMenu } from "../../hooks/useOpenMenu";
 
 interface ImageProps {
   name: string;
@@ -39,7 +40,7 @@ interface ImageProps {
 }
 
 function Home(): JSX.Element {
-  // const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { isOpenMenu, handleShowMenu } = useOpenMenu();
 
   const { width } = useViewport();
 
@@ -74,8 +75,8 @@ function Home(): JSX.Element {
       <PosterHeader>
         <Poster>
           <div className="logo">
-            <span className="hamburger">
-              <HiMenuAlt1 />
+            <span onClick={handleShowMenu} className="hamburger">
+              {isOpenMenu ? <HiX /> : <HiMenuAlt1 />}
             </span>
             <img src={Logo} alt="Header Logo" />
           </div>

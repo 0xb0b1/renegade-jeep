@@ -23,7 +23,7 @@
 
 <br />
 <div align="center">
-  <img src="https://github.com/0xb0b1/renegade-jeep/blob/master/screenshot.jpg" width="720">
+  <img src="https://github.com/0xb0b1/renegade-jeep/blob/master/screenshot.jpg" width="420">
 </div>
 
 # :eyes: Demo Website
@@ -37,6 +37,9 @@ This project was made using the follow technologies:
 * React Hooks
 * TypeScript
 * styled-components
+
+# : TODO
+* Create a draggable scrolling component when in mobile screens for the thumb grids.
 
 # :construction_worker: How to run
 **Just clone the repo and then:**

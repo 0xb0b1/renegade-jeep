@@ -32,6 +32,7 @@ import centralMultimedia from "../../assets/2-central-multimidia@2x.webp";
 import airBags from "../../assets/3-air-bags@2x.webp";
 import suspensaoIndependente from "../../assets/4-suspensao-independente@2x.webp";
 import seletorTerreno from "../../assets/5-seletor-terrenos@2x.webp";
+
 import { useOpenMenu } from "../../hooks/useOpenMenu";
 
 interface ImageProps {
